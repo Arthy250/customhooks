@@ -1,0 +1,22 @@
+
+// instalar react-navigation/native
+npm install @react-navigation/native
+
+// Instalar dependencias
+npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+// Instalar tipo de navegación
+  // Tipo stack
+  npm i @react-navigation/stack
+
+// IOS
+cd /ios
+pod install
+
+// Android
+android/app/build.gradle
+implementation "androidx.appcompat:appcompat:1.1.0-rc01"
+implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02"
+
+//App.js
+import 'react-native-gesture-handler';
