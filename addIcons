@@ -1,0 +1,8 @@
+Android
+
+build.gradle
+  apply from: '../../node_modules/react-native-vector-icons/fonts.gradle'
+  
+IOS
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
