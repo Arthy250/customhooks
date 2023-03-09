@@ -16,16 +16,16 @@
               require('autoprefixer')
           ]
       }
-      
- // Archivo de configuracion CSS - Tailwind
+     
+// Archivo de configuracion CSS - Tailwind
  
   /src/css/tailwind.css
   
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
-  
-  // Scripts package.json
+
+// Scripts package.json
   
     "start": "npm run watch:css && react-scripts start",
     "build": "npm run build:css && react-scripts build",
