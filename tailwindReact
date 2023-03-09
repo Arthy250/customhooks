@@ -1,0 +1,37 @@
+// instalar dependencias
+  npm i --save-dev autoprefixer postcss-cli tailwindcss
+  
+//Inicializar Tailwind
+  npx tailwind init tailwind.js
+  
+// Archivo de configuración de postCSS
+
+  raiz/postcss.config.js
+  
+      const tailwindcss = require('tailwindcss');
+
+      module.exports = {
+          plugins: [
+              tailwindcss('./tailwind.js'),
+              require('autoprefixer')
+          ]
+      }
+      
+ // Archivo de configuracion CSS - Tailwind
+ 
+  /src/css/tailwind.css
+  
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+  // Scripts package.json
+  
+    "start": "npm run watch:css && react-scripts start",
+    "build": "npm run build:css && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:css": "postcss src/css/tailwind.css -o src/css/main.css",
+    "watch:css": "postcss src/css/tailwind.css -o src/css/main.css"
+    
+ 
