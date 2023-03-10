@@ -4,6 +4,10 @@
 //Inicializar Tailwind
   npx tailwind init tailwind.js
   
+  content: [
+      "./src/**/*.{js,jsx,ts,tsx}",
+    ],
+  
 // Archivo de configuración de postCSS
 
   raiz/postcss.config.js
