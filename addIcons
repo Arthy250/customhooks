@@ -3,6 +3,9 @@ https://github.com/oblador/react-native-vector-icons#installation
 Nombres iconos
 https://oblador.github.io/react-native-vector-icons/
 
+Import 
+import Icon from 'react-native-vector-icons/dist/Ionicons';
+
 Instalar
 npm i react-native-vector-icons
 
