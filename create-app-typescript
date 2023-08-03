@@ -1,1 +1,4 @@
 npx react-native init AwesomeProject --template react-native-template-typescript
+
+// run ios simulator
+react-native run-ios --simulator="iPhone 12"
