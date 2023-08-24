@@ -1,0 +1,3 @@
+
+Grid responsive
+grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
