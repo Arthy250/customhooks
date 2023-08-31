@@ -1,0 +1,37 @@
+function addParamsToSignupLinks() {
+    var URL_PARAMS_SESSION_STORAGE_NAME = 'urlParams';
+
+    var urlParams = window.sessionStorage.getItem(URL_PARAMS_SESSION_STORAGE_NAME);
+
+    if (!urlParams) {
+        urlParams = location.search.substring(1);
+        window.sessionStorage.setItem(URL_PARAMS_SESSION_STORAGE_NAME, urlParams);
+    }
+
+    // Get all signup buttons
+    var SIGNUP_URL_REGEX = /^https:\/\/(vendorplace.yaydoo|app.vendorplace).com\/(es|en)\/signup$/;
+  
+    var SIGNUP_BUTTONS = DOMRegex(SIGNUP_URL_REGEX);
+
+    // Add url params to href signup buttons
+    if(urlParams) {
+        for(var buttonsCount = 0; buttonsCount < SIGNUP_BUTTONS.length; buttonsCount++) {
+            var buttonHref = SIGNUP_BUTTONS[buttonsCount].href;
+            SIGNUP_BUTTONS[buttonsCount].href = buttonHref + "?" + urlParams;
+        }
+    }
+  
+    // Get all buttons porcobrar/porpagar/blog href
+    var BUTTONS_URL = /porcobrar|porpagar|blog/;
+    var SIGNUP_BUTTONS = DOMRegex(BUTTONS_URL);
+  
+    // Add url params to href buttons
+    if(urlParams) {
+        for(var buttonsCount = 0; buttonsCount < SIGNUP_BUTTONS.length; buttonsCount++) {
+            var buttonHref = SIGNUP_BUTTONS[buttonsCount].href;
+            SIGNUP_BUTTONS[buttonsCount].href = buttonHref + "?" + urlParams;
+        }
+    }
+}
+
+addParamsToSignupLinks();
