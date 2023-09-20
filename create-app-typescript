@@ -1,4 +1,7 @@
 npx react-native init AwesomeProject --template react-native-template-typescript
 
 // run ios simulator
-react-native run-ios --simulator="iPhone 12"
+npx react-native run-ios --simulator="iPhone 12"
+
+// Splash screen
+https://github.com/crazycodeboy/react-native-splash-screen
