@@ -5,3 +5,9 @@ npx react-native run-ios --simulator="iPhone 12"
 
 // Splash screen
 https://github.com/crazycodeboy/react-native-splash-screen
+
+//Ruby conf
+.ruby-version
+3.1.2
+gemfile
+ruby ">= 3.1.2"
