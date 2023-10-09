@@ -1,5 +1,8 @@
 npx react-native init AwesomeProject --template react-native-template-typescript
 
+// Without install
+npx react-native init testproject --skip-install
+
 // run ios simulator
 npx react-native run-ios --simulator="iPhone 12"
 
