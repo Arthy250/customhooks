@@ -9,6 +9,13 @@ npx react-native run-ios --simulator="iPhone 12"
 // Splash screen
 https://github.com/crazycodeboy/react-native-splash-screen
 
+// IOS splash screen
+bool didFinish=[super application:application didFinishLaunchingWithOptions:launchOptions];
+
+[RNSplashScreen show];  // here
+return didFinish;
+
+
 //Ruby conf
 .ruby-version
 3.1.2
